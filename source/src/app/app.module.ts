@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule} from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -15,6 +16,8 @@ import {RouterModule, Routes } from "@angular/router";
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { ServeComponent } from './serve/serve.component';
+import { SignupComponent } from './login/signup/signup.component';
+
 
 
 const appRoutes: Routes =[
@@ -25,6 +28,7 @@ const appRoutes: Routes =[
   { path:'readytowear', component: ReadyToWearComponent},
   { path:'cutpieces', component: CutPiecesComponent},
   { path:'login', component: LoginComponent},
+  { path:'signup', component: SignupComponent},
 
 
   {
@@ -51,12 +55,14 @@ const appRoutes: Routes =[
     CutPiecesComponent,
     HomeComponent,
     LoginComponent,
-    ServeComponent
+    ServeComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
+    FormsModule,
     RouterModule.forRoot(appRoutes)
    
    
