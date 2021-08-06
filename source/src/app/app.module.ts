@@ -1,12 +1,14 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule} from '@angular/forms';
-
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
+
+
 import { AppComponent } from './app.component';
 import { NavbarheaderComponent } from './navbarheader/navbarheader.component';
 import { SwiperCarouselComponent } from './swiper-carousel/swiper-carousel.component';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NewInComponent } from './new-in/new-in.component';
 import { LawnComponent } from './lawn/lawn.component';
 import { UnstitchedComponent } from './unstitched/unstitched.component';
@@ -17,6 +19,7 @@ import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { ServeComponent } from './serve/serve.component';
 import { SignupComponent } from './login/signup/signup.component';
+
 
 
 
@@ -63,6 +66,7 @@ const appRoutes: Routes =[
     AppRoutingModule,
     NgbModule,
     FormsModule,
+    HttpClientModule,
     RouterModule.forRoot(appRoutes)
    
    

@@ -3,20 +3,20 @@
         <div class="image-holder">
             <img src="../../assets/images/2.jpg" alt="">
         </div>
-        <form action="">
+        <form novalidate >
             <input type="hidden" name="Id"
             [value]="service.formData.Id"/>
             <h3>Registration Form</h3>
             <div class="form-group">
-                <input type="text" placeholder="First Name" class="form-control" >
-                <input type="text" placeholder="Last Name" class="form-control" >
+                <input type="text" placeholder="First Name" class="form-control" name="userFirstName" >
+                <input type="text" placeholder="Last Name" class="form-control" name="userLastName" >
             </div>
             <div class="form-wrapper">
-                <input type="text" placeholder="Username" class="form-control" >
+                <input type="text" placeholder="Username" class="form-control" name="userName" >
                 <i class="zmdi zmdi-account"></i>
             </div>
             <div class="form-wrapper">
-                <input type="text" placeholder="Email Address" class="form-control" >
+                <input type="text" placeholder="Email Address" class="form-control" name="userEmail" >
                 <i class="zmdi zmdi-email"></i>
             </div>
             <div class="form-wrapper">
@@ -29,11 +29,11 @@
                 <i class="zmdi zmdi-caret-down" style="font-size: 17px"></i>
             </div>
             <div class="form-wrapper">
-                <input type="password" placeholder="Password" class="form-control" >
+                <input type="password" placeholder="Password" class="form-control" name="userPassword" >
                 <i class="zmdi zmdi-lock"></i>
             </div>
             <div class="form-wrapper">
-                <input type="password" placeholder="Confirm Password" class="form-control" >
+                <input type="password" placeholder="Confirm Password" class="form-control" name="userConfirmPassword" >
                 <i class="zmdi zmdi-lock"></i>
             </div>
             <button>Register
